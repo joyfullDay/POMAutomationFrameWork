@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="tests" name="Failed suite [nopCommerce regression test suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="com.nopcommerce.testlisteners.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="4" parallel="tests" name="home page test(failed)" verbose="0">
+    <classes>
+      <class name="com.nopcommerce.tests.HomePageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="validatePageTitleTest"/>
+        </methods>
+      </class> <!-- com.nopcommerce.tests.HomePageTest -->
+    </classes>
+  </test> <!-- home page test(failed) -->
+  <test thread-count="4" parallel="tests" name="login page test(failed)" verbose="0">
+    <classes>
+      <class name="com.nopcommerce.tests.LoginPageTest">
+        <methods>
+          <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="loginPageSetup"/>
+          <include name="validateUserLoginTest"/>
+        </methods>
+      </class> <!-- com.nopcommerce.tests.LoginPageTest -->
+    </classes>
+  </test> <!-- login page test(failed) -->
+</suite> <!-- Failed suite [nopCommerce regression test suite] -->
